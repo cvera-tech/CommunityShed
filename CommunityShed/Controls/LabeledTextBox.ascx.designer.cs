@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CommunityShed {
+namespace LibraryApplication.Controls {
     
     
-    public partial class Site {
+    public partial class LabeledTextBox {
         
         /// <summary>
-        /// head control.
+        /// ControlLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label ControlLabel;
         
         /// <summary>
-        /// form1 control.
+        /// ControlTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox ControlTextBox;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// ControlValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ControlValidator;
     }
 }

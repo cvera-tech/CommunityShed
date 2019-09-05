@@ -12,7 +12,8 @@
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+            <h1>Hello</h1>
+            <uc:TextBox runat="server" />
         </asp:ContentPlaceHolder>
     </div>
     </form>
