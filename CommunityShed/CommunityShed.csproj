@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Pages\AddPerson.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -127,6 +128,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\DatabaseHelper.cs" />
+    <Compile Include="Pages\AddPerson.aspx.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AddPerson.aspx.designer.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
