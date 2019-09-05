@@ -5,17 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder ID="Head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            <h1>Hello</h1>
-            <uc:TextBox runat="server" />
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <h1>
+                <asp:Label ID="GreetingLabel" runat="server" />
+                <asp:Label ID="UserLabel" runat="server" />
+            </h1>
+            <asp:ContentPlaceHolder ID="Main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

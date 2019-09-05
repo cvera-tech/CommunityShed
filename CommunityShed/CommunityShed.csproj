@@ -94,7 +94,9 @@
     <Content Include="Controls\LabeledDropDownList.ascx" />
     <Content Include="Controls\LabeledTextBox.ascx" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddItem.aspx.cs">
@@ -104,6 +106,8 @@
     <Compile Include="AddItem.aspx.designer.cs">
       <DependentUpon>AddItem.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Authentication\CustomIdentity.cs" />
+    <Compile Include="Authentication\CustomPrincipal.cs" />
     <Compile Include="Controls\LabeledDropDownList.ascx.cs">
       <DependentUpon>LabeledDropDownList.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
