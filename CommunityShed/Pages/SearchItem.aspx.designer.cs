@@ -7,28 +7,37 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CommunityShed {
+namespace CommunityShed.Pages {
     
     
-    public partial class AddItem {
+    public partial class SearchItem {
         
         /// <summary>
-        /// ItemNameLabel control.
+        /// ToolNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ItemNameLabel;
+        protected global::System.Web.UI.WebControls.Label ToolNameLabel;
         
         /// <summary>
-        /// ItemNameInput control.
+        /// ToolNameInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ItemNameInput;
+        protected global::System.Web.UI.WebControls.TextBox ToolNameInput;
+        
+        /// <summary>
+        /// SearchButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SearchButton;
         
         /// <summary>
         /// CategoryList control.
@@ -49,66 +58,30 @@ namespace CommunityShed {
         protected global::System.Web.UI.WebControls.SqlDataSource ToolTypeDataSource;
         
         /// <summary>
-        /// PersonList control.
+        /// RangeList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList PersonList;
+        protected global::System.Web.UI.WebControls.DropDownList RangeList;
         
         /// <summary>
-        /// PersonListDataSource control.
+        /// RangeTypeDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource PersonListDataSource;
+        protected global::System.Web.UI.WebControls.SqlDataSource RangeTypeDataSource;
         
         /// <summary>
-        /// WarningsLabel control.
+        /// ItemsList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label WarningsLabel;
-        
-        /// <summary>
-        /// WarningInput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox WarningInput;
-        
-        /// <summary>
-        /// AgeLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label AgeLabel;
-        
-        /// <summary>
-        /// AgeInput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AgeInput;
-        
-        /// <summary>
-        /// Save control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Save;
+        protected global::System.Web.UI.WebControls.Repeater ItemsList;
     }
 }
