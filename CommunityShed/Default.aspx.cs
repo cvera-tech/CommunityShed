@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace CommunityShed
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Default : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,6 +20,21 @@ namespace CommunityShed
                     JOIN Person p ON cp.PersonId = p.id");
             ItemsList.DataSource = dt.Rows;
             ItemsList.DataBind();
+        }
+
+        protected void LoansButton_Command(object sender, CommandEventArgs e)
+        {
+
+        }
+
+        protected void CommunitiesButton_Command(object sender, CommandEventArgs e)
+        {
+
+        }
+
+        protected void ItemsButton_Command(object sender, CommandEventArgs e)
+        {
+
         }
     }
 }
