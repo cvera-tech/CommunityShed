@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SearchItem.aspx.cs" Inherits="CommunityShed.Pages.SearchItem" %>
 <%@ import namespace="System.Data" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
          <div>  
             <asp:label id="ToolNameLabel" runat="server"  text="Name: " />
             <asp:textbox id="ToolNameInput" runat="server" />
@@ -27,18 +27,23 @@
     <asp:repeater id="ItemsList" runat="server" itemtype="DataRow">
             <headertemplate>
                 <table class="table table-sm table-striped table-hover" >
-                    <tr>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Owner</th>
-                        <th>&nbsp;</th>
-                    </tr>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Owner</th>
+                            <th>Age</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
             </headertemplate>
             <itemtemplate>
                 <tr>
                     <td><%# Item.Field<string>("Name") %></td>
                     <td><%# Item.Field<string>("Type") %></td>
-                     <td><%# Item.Field<string>("FullName") %></td>
+                    <td><%# Item.Field<string>("FullName") %></td>
+                    <td><%# Item.Field<string>("Age") %></td>
+                    <td><asp:hyperlink runat="server" navigateurl='<%# $"~/Pages/LoanApplication.aspx?ID={Item.Field<int>("ItemId")}" %>' text="Checkout" /></td>
                 </tr>
             </itemtemplate>
             <footertemplate>

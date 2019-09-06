@@ -7,54 +7,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CommunityShed {
+namespace CommunityShed.Pages {
     
     
-    public partial class Site {
+    public partial class LoanApplication {
         
         /// <summary>
-        /// Head control.
+        /// LenderNameDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Head;
+        protected global::System.Web.UI.WebControls.Label LenderNameDisplay;
         
         /// <summary>
-        /// form1 control.
+        /// ToolDetailLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label ToolDetailLabel;
         
         /// <summary>
-        /// GreetingLabel control.
+        /// ToolNameDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label GreetingLabel;
+        protected global::System.Web.UI.WebControls.Label ToolNameDisplay;
         
         /// <summary>
-        /// UserLabel control.
+        /// ToolsWarningDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UserLabel;
+        protected global::System.Web.UI.WebControls.Label ToolsWarningDisplay;
         
         /// <summary>
-        /// Main control.
+        /// ToolsAgeDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Main;
+        protected global::System.Web.UI.WebControls.Label ToolsAgeDisplay;
+        
+        /// <summary>
+        /// SubmitLoan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SubmitLoan;
     }
 }

@@ -76,6 +76,8 @@
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pages\Communities.aspx" />
+    <Content Include="Pages\LoanApplication.aspx" />
     <Content Include="Pages\SearchItem.aspx" />
     <Content Include="Pages\Users.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -96,9 +98,16 @@
     <Content Include="Controls\LabeledDropDownList.ascx" />
     <Content Include="Controls\LabeledTextBox.ascx" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentication\CustomIdentity.cs" />
+    <Compile Include="Authentication\CustomPrincipal.cs" />
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Pages\AddItem.aspx.cs">
       <DependentUpon>AddItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -138,6 +147,20 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\DatabaseHelper.cs" />
+    <Compile Include="Pages\Communities.aspx.cs">
+      <DependentUpon>Communities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Communities.aspx.designer.cs">
+      <DependentUpon>Communities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanApplication.aspx.cs">
+      <DependentUpon>LoanApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanApplication.aspx.designer.cs">
+      <DependentUpon>LoanApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SearchItem.aspx.cs">
       <DependentUpon>SearchItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
