@@ -5,20 +5,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>   
     <asp:ContentPlaceHolder ID="Head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CommunityShed</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/Pages/AddPerson.aspx">Add Person</asp:hyperlink></li>
+                    <li class="nav-item">
+                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/Pages/AddItem.aspx">Add Item</asp:hyperlink></li>
+
+                    <li class="nav-item">
+                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/Pages/SearchItem.aspx">Search</asp:hyperlink></li>
+                </ul>
+            </div>
+            </nav>
+            </div>
         <div>
             <h1>
                 <asp:Label ID="GreetingLabel" runat="server" />
                 <asp:Label ID="UserLabel" runat="server" />
             </h1>
-            <asp:ContentPlaceHolder ID="Main" runat="server">
+          
+             <asp:ContentPlaceHolder ID="Main" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
