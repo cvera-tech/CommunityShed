@@ -5,17 +5,17 @@
 
      <h2>Add Item</h2>
     <fieldset>
-        <div>
+        <div class ="form-group">
             <asp:label id="ItemNameLabel" runat="server"  text="Name: " />
+            <div class ="col-3">
             <asp:textbox id="ItemNameInput" runat="server" />
-        </div>
-
-        <div>
+            </div>
+       </div>
             <asp:DropDownList ID="CategoryList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="ToolTypeDataSource" DataTextField="Type" DataValueField="Id">
                 <asp:ListItem>Tool Type</asp:ListItem>
             </asp:DropDownList>
             <asp:SqlDataSource ID="ToolTypeDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:CommunityShed %>" SelectCommand="SELECT [Id], [Type] FROM [Categories]"></asp:SqlDataSource>
-        </div>
+        </>
 
         <div>
             <asp:DropDownList ID="PersonList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PersonListDataSource" DataTextField="name" DataValueField="cid">
