@@ -4,11 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Login</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <h1>Login</h1>
+        <div>
+            <asp:Label ID="BadLoginMessage" runat="server" 
+                ForeColor="Red"
+                Text="Invalid user name or password"
+                Visible="false" />
+        </div>
         <fieldset>
             <asp:ValidationSummary runat="server"
                 ValidationGroup="Login" />

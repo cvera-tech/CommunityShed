@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SearchItem.aspx.cs" Inherits="CommunityShed.Pages.SearchItem" %>
 <%@ import namespace="System.Data" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
          <div>  
             <asp:label id="ToolNameLabel" runat="server"  text="Name: " />
             <asp:textbox id="ToolNameInput" runat="server" />
@@ -31,6 +31,7 @@
                         <th>Name</th>
                         <th>Category</th>
                         <th>Owner</th>
+                        <th>Age</th>
                         <th>&nbsp;</th>
                     </tr>
             </headertemplate>
@@ -38,7 +39,8 @@
                 <tr>
                     <td><%# Item.Field<string>("Name") %></td>
                     <td><%# Item.Field<string>("Type") %></td>
-                     <td><%# Item.Field<string>("FullName") %></td>
+                    <td><%# Item.Field<string>("FullName") %></td>
+                    <td><%# Item.Field<string>("Age") %></td>
                 </tr>
             </itemtemplate>
             <footertemplate>
