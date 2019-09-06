@@ -76,6 +76,7 @@
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pages\LoanApplication.aspx" />
     <Content Include="Pages\SearchItem.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -141,6 +142,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\DatabaseHelper.cs" />
+    <Compile Include="Pages\LoanApplication.aspx.cs">
+      <DependentUpon>LoanApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanApplication.aspx.designer.cs">
+      <DependentUpon>LoanApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SearchItem.aspx.cs">
       <DependentUpon>SearchItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
