@@ -27,13 +27,15 @@
     <asp:repeater id="ItemsList" runat="server" itemtype="DataRow">
             <headertemplate>
                 <table class="table table-sm table-striped table-hover" >
-                    <tr>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Owner</th>
-                        <th>Age</th>
-                        <th>&nbsp;</th>
-                    </tr>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Owner</th>
+                            <th>Age</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
             </headertemplate>
             <itemtemplate>
                 <tr>
