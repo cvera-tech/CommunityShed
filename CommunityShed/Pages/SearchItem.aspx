@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SearchItem.aspx.cs" Inherits="CommunityShed.Pages.SearchItem" %>
 <%@ import namespace="System.Data" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
          <div>  
             <asp:label id="ToolNameLabel" runat="server"  text="Name: " />
             <asp:textbox id="ToolNameInput" runat="server" />
