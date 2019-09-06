@@ -52,13 +52,15 @@ namespace CommunityShed.Pages
         {
             DateTime requestedOndate = DateTime.UtcNow;
             string currentStatus = "Pending";
+            int daysToBorrow = int.Parse(DaySelector.SelectedValue);
             int? id = DatabaseHelper.Insert(@"
-                insert into LoanApplication (ItemId, RequestedOn, BorrowerId, Status , LenderId)
-                values (@ItemId, @RequestedOn, @BorrowerId, @Status, @LenderId);",
+                insert into LoanApplication (ItemId, RequestedOn, BorrowerId, Status, Duration, LenderId)
+                values (@ItemId, @RequestedOn, @BorrowerId, @Status, @Duration, @LenderId);",
                new SqlParameter("@ItemId", itemId),
                new SqlParameter("@RequestedOn", requestedOndate),
                new SqlParameter("@BorrowerId", userId),
                new SqlParameter("@Status", currentStatus),
+               new SqlParameter("@Duration", daysToBorrow),
                new SqlParameter("@LenderId", lenderId));
             ;
         }
