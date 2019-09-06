@@ -77,6 +77,7 @@
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Pages\Communities.aspx" />
+    <Content Include="Pages\LoanApplication.aspx" />
     <Content Include="Pages\SearchItem.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -151,6 +152,13 @@
     </Compile>
     <Compile Include="Pages\Communities.aspx.designer.cs">
       <DependentUpon>Communities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoanApplication.aspx.cs">
+      <DependentUpon>LoanApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoanApplication.aspx.designer.cs">
+      <DependentUpon>LoanApplication.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\SearchItem.aspx.cs">
       <DependentUpon>SearchItem.aspx</DependentUpon>

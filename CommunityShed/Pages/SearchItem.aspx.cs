@@ -29,7 +29,7 @@ namespace CommunityShed.Pages
             if (toolName.Length>1 && (selectedToolType == -1) && (range==-1))
             {
                 DataTable dt = DatabaseHelper.Retrieve(@"
-                    SELECT i.[Name],c.[Type], c.Id ,i.CategoriesId, p.FirstName + ' ' + p.LastName AS FullName, ag.Age
+                    SELECT i.id, i.[Name],c.[Type], c.Id ,i.CategoriesId, p.FirstName + ' ' + p.LastName AS FullName, ag.Age
                     FROM Item i JOIN CommunityPerson cp ON i.CommunityPersonId = cp.Id
                     JOIN Categories c ON i.CategoriesId = c.Id
                     JOIN Person p ON cp.PersonId = p.id
@@ -43,7 +43,7 @@ namespace CommunityShed.Pages
             else if (selectedToolType != -1 && toolName.Length==0)
             {
                 DataTable dt = DatabaseHelper.Retrieve(@"
-                    SELECT i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
+                    SELECT  i.id AS itemId,i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
                     FROM Item i JOIN Categories c ON i.CategoriesId = c.Id
                     JOIN CommunityPerson cp ON I.CommunityPersonId = cp.Id
                     JOIN Person p ON cp.PersonId = p.id
@@ -58,7 +58,7 @@ namespace CommunityShed.Pages
             else if (range!= -1 && toolName.Length == 0)
             {
                 DataTable dt = DatabaseHelper.Retrieve(@"
-                    SELECT i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
+                    SELECT  i.id AS itemId, i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
                     FROM Item i JOIN Categories c ON i.CategoriesId = c.Id
                     JOIN AgeRange ag ON ag.Id = i.AgeId
                     JOIN CommunityPerson cp ON I.CommunityPersonId = cp.Id
@@ -72,7 +72,7 @@ namespace CommunityShed.Pages
             else if (toolName.Length>1 && selectedToolType != -1)
             {
                 DataTable dt = DatabaseHelper.Retrieve(@"
-                    SELECT i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
+                    SELECT i.id AS itemId, i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
                     FROM Item i JOIN Categories c ON i.CategoriesId = c.Id
                     JOIN AgeRange ag ON ag.Id = i.AgeId
                     JOIN CommunityPerson cp ON I.CommunityPersonId = cp.Id
@@ -88,7 +88,7 @@ namespace CommunityShed.Pages
             else if (toolName.Length > 1 && range!= -1)
             {
                 DataTable dt = DatabaseHelper.Retrieve(@"
-                    SELECT i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
+                    SELECT  i.id AS itemId, i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
                     FROM Item i JOIN Categories c ON i.CategoriesId = c.Id
                     JOIN AgeRange ag ON ag.Id = i.AgeId
                     JOIN CommunityPerson cp ON I.CommunityPersonId = cp.Id
@@ -104,7 +104,7 @@ namespace CommunityShed.Pages
             else if (toolName.Length > 1 && selectedToolType != -1 && range != -1)
             {
                 DataTable dt = DatabaseHelper.Retrieve(@"
-                    SELECT i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
+                    SELECT  i.id AS itemId, i.[Name], i.CategoriesId, c.[Type], c.Id,  p.FirstName + ' ' + p.LastNAME AS FullName, ag.Age
                     FROM Item i JOIN Categories c ON i.CategoriesId = c.Id
                     JOIN AgeRange ag ON ag.Id = i.AgeId
                     JOIN CommunityPerson cp ON I.CommunityPersonId = cp.Id

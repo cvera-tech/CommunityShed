@@ -7,45 +7,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CommunityShed {
+namespace CommunityShed.Pages {
     
     
-    public partial class Login {
+    public partial class LoanApplication {
         
         /// <summary>
-        /// BadLoginMessage control.
+        /// LenderNameDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BadLoginMessage;
+        protected global::System.Web.UI.WebControls.Label LenderNameDisplay;
         
         /// <summary>
-        /// UsernameTextBox control.
+        /// ToolDetailLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::LibraryApplication.Controls.LabeledTextBox UsernameTextBox;
+        protected global::System.Web.UI.WebControls.Label ToolDetailLabel;
         
         /// <summary>
-        /// PasswordTextBox control.
+        /// ToolNameDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::LibraryApplication.Controls.LabeledTextBox PasswordTextBox;
+        protected global::System.Web.UI.WebControls.Label ToolNameDisplay;
         
         /// <summary>
-        /// SubmitButton control.
+        /// ToolsWarningDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitButton;
+        protected global::System.Web.UI.WebControls.Label ToolsWarningDisplay;
+        
+        /// <summary>
+        /// ToolsAgeDisplay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ToolsAgeDisplay;
+        
+        /// <summary>
+        /// SubmitLoan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SubmitLoan;
     }
 }
