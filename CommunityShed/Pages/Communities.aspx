@@ -16,7 +16,8 @@
     <asp:Panel ID="UserCommunitiesPanel" runat="server"
         Visible="true">
         <h1>Your Communities</h1>
-        <asp:Repeater ID="UserCommunitiesRepeater" runat="server">
+        <asp:Repeater ID="UserCommunitiesRepeater" runat="server"
+            ItemType="DataRow" >
             <HeaderTemplate>
                 <table>
                     <thead>
@@ -30,8 +31,20 @@
             </HeaderTemplate>
             <ItemTemplate>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <asp:HyperLink runat="server"
+                            Text='<%# Item.Field<string>("Name") %>'
+                            NavigateUrl='<%# Item.Field<int>("Id") %>' />
+                    </td>
+                    <td>
+                        <asp:CheckBox runat="server"
+                            Checked='<%# Item.Field<bool>("Availability") %>'
+                            Enabled="false" />
+                    </td>
+                    <td>
+                        <asp:Label runat="server"
+                            Text='<%# Item.Field<string>("Roles") %>' />
+                    </td>
                 </tr>
             </ItemTemplate>
             <FooterTemplate>
