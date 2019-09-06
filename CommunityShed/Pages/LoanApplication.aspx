@@ -20,16 +20,17 @@
     </div>
 
     <asp:Button ID="SubmitLoan" runat="server" Text ="Search" OnClick="SubmitLoan_Click"/>
-   <%-- <asp:DropDownList id="DaySelector"
-                    AutoPostBack="True"
-                    OnSelectedIndexChanged="Selection_Change"
+    <div>  
+    <asp:Label ID ="DurationLabel" Text ="Choose duration:" runat="server"></asp:Label> 
+    <asp:DropDownList id="DaySelector"
                     runat="server">
-                  <asp:ListItem Value="1"> 1 </asp:ListItem>
-                  <asp:ListItem Value="2"> 2 </asp:ListItem>
-                  <asp:ListItem Value="3"> 3 </asp:ListItem>
-                  <asp:ListItem Value="4"> 4 </asp:ListItem>
-                  <asp:ListItem Value="5"> 5 </asp:ListItem>
-                  <asp:ListItem Value="6"> 6 </asp:ListItem>
-                  <asp:ListItem Value="7"> 7 </asp:ListItem>
-               </asp:DropDownList>--%>
+                  <asp:ListItem Value="1"> 1 day </asp:ListItem>
+                  <asp:ListItem Value="2"> 2 days </asp:ListItem>
+                  <asp:ListItem Value="3"> 3 days </asp:ListItem>
+                  <asp:ListItem Value="4"> 4 days</asp:ListItem>
+                  <asp:ListItem Value="5"> 5 days</asp:ListItem>
+                  <asp:ListItem Value="6"> 6 days </asp:ListItem>
+                  <asp:ListItem Value="7"> 7 days </asp:ListItem>
+               </asp:DropDownList>
+        </div> 
 </asp:Content>

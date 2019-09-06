@@ -70,6 +70,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\bootstrap.min.css" />
     <Content Include="Pages\AddItem.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Pages\AddPerson.aspx" />
