@@ -33,10 +33,12 @@
        
         </div> 
 
-        <div>  
-            <asp:label id="AgeLabel" runat="server"  text="Age: " />
-            <asp:textbox id="AgeInput" runat="server" />
-        </div> 
+        <div>
+            <asp:DropDownList ID="RangeList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="RangeTypeDataSource" DataTextField="Age" DataValueField="Id">
+                <asp:ListItem>Range</asp:ListItem>
+            </asp:DropDownList>
+            <asp:SqlDataSource ID="RangeTypeDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:CommunityShed %>" SelectCommand="SELECT [Id], [Age] FROM [AgeRange]"></asp:SqlDataSource>
+        </div>
        
         <div>
              <asp:button id="Save" runat="server" text="Save" OnClick="AddItem_Click" />

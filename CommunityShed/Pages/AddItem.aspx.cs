@@ -21,16 +21,16 @@ namespace CommunityShed
             string itemName = ItemNameInput.Text;
             string warning = WarningInput.Text;
             string itemUse = CategoryList.SelectedValue;
-            int personId = PersonList.SelectedIndex;
-            string age = AgeInput.Text;
+            int personId = int.Parse(PersonList.SelectedValue);
+            int age = int.Parse(RangeList.SelectedValue);
 
             int? id = DatabaseHelper.Insert(@"
-                insert into Item (Name, ToolType, Age, Warnings, CommunityPersonId)
-                values (@Name, @ToolType, @Age, @Warnings, @CommunityPersonId);
+                insert into Item (Name, ToolType, AgeId, Warnings, CommunityPersonId)
+                values (@Name, @ToolType, @AgeId, @Warnings, @CommunityPersonId);
             ",
                 new SqlParameter("@Name", itemName),
                 new SqlParameter("@ToolType", itemUse),
-                new SqlParameter("@Age", age),
+                new SqlParameter("@AgeId", age),
                 new SqlParameter("@Warnings", warning),
                 new SqlParameter("@CommunityPersonId", personId));
             ;
