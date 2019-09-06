@@ -13,7 +13,7 @@ namespace CommunityShed.Models
     {
         public static DataTable Retrieve(string sql, params SqlParameter[] parameters)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Library"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["CommunityShed"].ConnectionString;
 
             DataTable dt = new DataTable();
 
