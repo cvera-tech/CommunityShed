@@ -103,6 +103,9 @@
   <ItemGroup>
     <Compile Include="Authentication\CustomIdentity.cs" />
     <Compile Include="Authentication\CustomPrincipal.cs" />
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Pages\AddItem.aspx.cs">
       <DependentUpon>AddItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

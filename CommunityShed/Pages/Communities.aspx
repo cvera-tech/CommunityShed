@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Communities.aspx.cs" Inherits="CommunityShed.Pages.Communities" %>
 
+<%@ Import Namespace="System.Data" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
@@ -20,6 +22,7 @@
                     <thead>
                         <tr>
                             <th>Community Name</th>
+                            <th>Open</th>
                             <th>Your Role(s)</th>
                         </tr>
                     </thead>
@@ -39,21 +42,29 @@
     </asp:Panel>
     <asp:Panel ID="AllCommunitiesPanel" runat="server">
         <h1>All Communities</h1>
-        <asp:Repeater ID="AllCommunitiesRepeater" runat="server">
+        <asp:Repeater ID="AllCommunitiesRepeater" runat="server" ItemType="DataRow">
             <HeaderTemplate>
                 <table>
                     <thead>
                         <tr>
                             <th>Community Name</th>
-                            <th>Your Role(s)</th>
+                            <th>Open</th>
                         </tr>
                     </thead>
                     <tbody>
             </HeaderTemplate>
             <ItemTemplate>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <asp:HyperLink runat="server"
+                            Text='<%# Item.Field<string>("Name") %>'
+                            NavigateUrl='<%# Item.Field<int>("Id") %>' />
+                    </td>
+                    <td>
+                        <asp:CheckBox runat="server"
+                            Checked='<%# Item.Field<bool>("Availability") %>'
+                            Enabled="false" />
+                    </td>
                 </tr>
             </ItemTemplate>
             <FooterTemplate>
