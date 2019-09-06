@@ -31,6 +31,7 @@
                         <th>Name</th>
                         <th>Category</th>
                         <th>Owner</th>
+                        <th>Age</th>
                         <th>&nbsp;</th>
                     </tr>
             </headertemplate>
@@ -38,7 +39,8 @@
                 <tr>
                     <td><%# Item.Field<string>("Name") %></td>
                     <td><%# Item.Field<string>("Type") %></td>
-                     <td><%# Item.Field<string>("FullName") %></td>
+                    <td><%# Item.Field<string>("FullName") %></td>
+                    <td><%# Item.Field<string>("Age") %></td>
                 </tr>
             </itemtemplate>
             <footertemplate>
