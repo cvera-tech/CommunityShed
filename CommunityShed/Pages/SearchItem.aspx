@@ -43,6 +43,7 @@
                     <td><%# Item.Field<string>("Type") %></td>
                     <td><%# Item.Field<string>("FullName") %></td>
                     <td><%# Item.Field<string>("Age") %></td>
+                    <td><asp:hyperlink runat="server" navigateurl='<%# $"~/Pages/LoanApplication.aspx?ID={Item.Field<int>("ItemId")}" %>' text="Checkout" /></td>
                 </tr>
             </itemtemplate>
             <footertemplate>
