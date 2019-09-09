@@ -7,108 +7,81 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CommunityShed {
+namespace CommunityShed.Pages {
     
     
-    public partial class Default {
+    public partial class LoanApplication {
         
         /// <summary>
-        /// LoansPanel control.
+        /// LenderNameDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel LoansPanel;
+        protected global::System.Web.UI.WebControls.Label LenderNameDisplay;
         
         /// <summary>
-        /// LoansRepeater control.
+        /// ToolDetailLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater LoansRepeater;
+        protected global::System.Web.UI.WebControls.Label ToolDetailLabel;
         
         /// <summary>
-        /// LoansButton control.
+        /// ToolNameDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoansButton;
+        protected global::System.Web.UI.WebControls.Label ToolNameDisplay;
         
         /// <summary>
-        /// CommunitiesPanel control.
+        /// ToolsWarningDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel CommunitiesPanel;
+        protected global::System.Web.UI.WebControls.Label ToolsWarningDisplay;
         
         /// <summary>
-        /// CommunitiesRepeater control.
+        /// ToolsAgeDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater CommunitiesRepeater;
+        protected global::System.Web.UI.WebControls.Label ToolsAgeDisplay;
         
         /// <summary>
-        /// CommunitiesButton control.
+        /// SubmitLoan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CommunitiesButton;
+        protected global::System.Web.UI.WebControls.Button SubmitLoan;
         
         /// <summary>
-        /// ItemsPanel control.
+        /// DurationLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ItemsPanel;
+        protected global::System.Web.UI.WebControls.Label DurationLabel;
         
         /// <summary>
-        /// ItemsRepeater control.
+        /// DaySelector control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ItemsRepeater;
-        
-        /// <summary>
-        /// ItemsButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ItemsButton;
-        
-        /// <summary>
-        /// RequestsPanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel RequestsPanel;
-        
-        /// <summary>
-        /// ItemsList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ItemsList;
+        protected global::System.Web.UI.WebControls.DropDownList DaySelector;
     }
 }

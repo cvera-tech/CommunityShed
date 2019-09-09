@@ -7,54 +7,72 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CommunityShed {
+namespace CommunityShed.Pages {
     
     
-    public partial class Site {
+    public partial class Communities {
         
         /// <summary>
-        /// Head control.
+        /// SwitchCommunitiesPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Head;
+        protected global::System.Web.UI.WebControls.Panel SwitchCommunitiesPanel;
         
         /// <summary>
-        /// form1 control.
+        /// UserCommunitiesButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button UserCommunitiesButton;
         
         /// <summary>
-        /// GreetingLabel control.
+        /// AllCommunitiesButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label GreetingLabel;
+        protected global::System.Web.UI.WebControls.Button AllCommunitiesButton;
         
         /// <summary>
-        /// UserLabel control.
+        /// UserCommunitiesPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UserLabel;
+        protected global::System.Web.UI.WebControls.Panel UserCommunitiesPanel;
         
         /// <summary>
-        /// Main control.
+        /// UserCommunitiesRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Main;
+        protected global::System.Web.UI.WebControls.Repeater UserCommunitiesRepeater;
+        
+        /// <summary>
+        /// AllCommunitiesPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel AllCommunitiesPanel;
+        
+        /// <summary>
+        /// AllCommunitiesRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater AllCommunitiesRepeater;
     }
 }

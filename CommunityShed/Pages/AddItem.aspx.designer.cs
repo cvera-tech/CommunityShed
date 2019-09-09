@@ -10,105 +10,105 @@
 namespace CommunityShed {
     
     
-    public partial class Default {
+    public partial class AddItem {
         
         /// <summary>
-        /// LoansPanel control.
+        /// ItemNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel LoansPanel;
+        protected global::System.Web.UI.WebControls.Label ItemNameLabel;
         
         /// <summary>
-        /// LoansRepeater control.
+        /// ItemNameInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater LoansRepeater;
+        protected global::System.Web.UI.WebControls.TextBox ItemNameInput;
         
         /// <summary>
-        /// LoansButton control.
+        /// CategoryList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoansButton;
+        protected global::System.Web.UI.WebControls.DropDownList CategoryList;
         
         /// <summary>
-        /// CommunitiesPanel control.
+        /// ToolTypeDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel CommunitiesPanel;
+        protected global::System.Web.UI.WebControls.SqlDataSource ToolTypeDataSource;
         
         /// <summary>
-        /// CommunitiesRepeater control.
+        /// PersonList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater CommunitiesRepeater;
+        protected global::System.Web.UI.WebControls.DropDownList PersonList;
         
         /// <summary>
-        /// CommunitiesButton control.
+        /// PersonListDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CommunitiesButton;
+        protected global::System.Web.UI.WebControls.SqlDataSource PersonListDataSource;
         
         /// <summary>
-        /// ItemsPanel control.
+        /// WarningsLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ItemsPanel;
+        protected global::System.Web.UI.WebControls.Label WarningsLabel;
         
         /// <summary>
-        /// ItemsRepeater control.
+        /// WarningInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ItemsRepeater;
+        protected global::System.Web.UI.WebControls.TextBox WarningInput;
         
         /// <summary>
-        /// ItemsButton control.
+        /// RangeList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ItemsButton;
+        protected global::System.Web.UI.WebControls.DropDownList RangeList;
         
         /// <summary>
-        /// RequestsPanel control.
+        /// RangeTypeDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel RequestsPanel;
+        protected global::System.Web.UI.WebControls.SqlDataSource RangeTypeDataSource;
         
         /// <summary>
-        /// ItemsList control.
+        /// Save control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ItemsList;
+        protected global::System.Web.UI.WebControls.Button Save;
     }
 }
