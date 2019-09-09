@@ -68,16 +68,17 @@ namespace CommunityShed.Models
 
             using (var connection = new SqlConnection(connectionString))
             {
-                var command = new SqlCommand(sql, connection);
-
-                foreach (var parameter in parameters)
+                using (var command = new SqlCommand(sql, connection))
                 {
-                    command.Parameters.Add(parameter);
-                }
+                    foreach (var parameter in parameters)
+                    {
+                        command.Parameters.Add(parameter);
+                    }
 
-                // This is where the work is happening.
-                command.Connection.Open();
-                command.ExecuteNonQuery();
+                    // This is where the work is happening.
+                    command.Connection.Open();
+                    command.ExecuteNonQuery();
+                }
             }
         }
     }

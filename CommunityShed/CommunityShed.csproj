@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="Pages\AddCommunity.aspx" />
     <Content Include="Pages\AddItem.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Pages\AddPerson.aspx" />
@@ -107,6 +108,13 @@
     <Compile Include="Authentication\CustomPrincipal.cs" />
     <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AddCommunity.aspx.cs">
+      <DependentUpon>AddCommunity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AddCommunity.aspx.designer.cs">
+      <DependentUpon>AddCommunity.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AddItem.aspx.cs">
       <DependentUpon>AddItem.aspx</DependentUpon>
