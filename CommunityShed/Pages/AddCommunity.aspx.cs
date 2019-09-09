@@ -44,6 +44,7 @@ namespace CommunityShed.Pages
                 new SqlParameter("@Name", communityName),
                 new SqlParameter("@Availability", availability),
                 new SqlParameter("@PersonId", userId));
+            Response.Redirect("~/Pages/Communities.aspx");
         }
     }
 }
