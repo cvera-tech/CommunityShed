@@ -23,10 +23,11 @@ namespace CommunityShed.Pages
         ";
 
         private const string GetCommunityRolesQuery = @"
-            SELECT Role
+            SELECT R.Name
             FROM CommunityPerson CP
                 JOIN Community C ON CP.CommunityId = C.Id
-                JOIN Person P On CP.PersonId = P.Id
+                JOIN Person P ON CP.PersonId = P.Id
+                JOIN Role R ON CP.RoleId = R.Id
             WHERE P.Id = @UserId
                 AND C.Id = @CommunityId
         ";
@@ -103,11 +104,11 @@ namespace CommunityShed.Pages
             {
                 if (string.IsNullOrEmpty(rolesBuilder.ToString()))
                 {
-                    rolesBuilder.Append(row.Field<string>("Role"));
+                    rolesBuilder.Append(row.Field<string>("Name"));
                 }
                 else
                 {
-                    rolesBuilder.Append(", " + row.Field<string>("Role"));
+                    rolesBuilder.Append(", " + row.Field<string>("Name"));
                 }
             }
 
